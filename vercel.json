@@ -1,7 +1,7 @@
 {
   "version": 2,
   "buildCommand": "pnpm --filter @workspace/nyxium run build",
-  "outputDirectory": "artifacts/nyxium/dist/public",
+  "outputDirectory": "artifacts/nyxium/dist",
   "installCommand": "pnpm install",
   "framework": null,
   "rewrites": [
