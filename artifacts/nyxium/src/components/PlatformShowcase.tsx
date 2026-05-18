@@ -60,7 +60,7 @@ function DashboardMockup({ inView }: { inView: boolean }) {
                 key={i}
                 initial={{ scaleY: 0 }}
                 animate={inView ? { scaleY: 1 } : {}}
-                transition={{ duration: 0.8, delay: 0.04 * i, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.8, delay: 0.04 * i, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
                 style={{
                   transformOrigin: "bottom",
                   height: `${h}%`,
@@ -88,7 +88,7 @@ function DashboardMockup({ inView }: { inView: boolean }) {
                 <motion.div
                   initial={{ width: 0 }}
                   animate={inView ? { width: `${model.load}%` } : {}}
-                  transition={{ duration: 1.2, delay: 0.2 * i, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{ duration: 1.2, delay: 0.2 * i, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
                   className="h-full rounded-full"
                   style={{ background: model.color }}
                 />
@@ -131,7 +131,7 @@ export const PlatformShowcase = () => {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
             >
               <motion.div
                 animate={{ y: [0, -12, 0], rotateZ: [-0.3, 0.3, -0.3] }}
@@ -151,7 +151,7 @@ export const PlatformShowcase = () => {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/10 border border-blue-500/20 mb-6">
                 <span className="text-xs font-mono text-blue-400 tracking-widest uppercase">The Platform</span>
@@ -172,7 +172,7 @@ export const PlatformShowcase = () => {
                     key={i}
                     initial={{ opacity: 0, x: 20 }}
                     animate={inView ? { opacity: 1, x: 0 } : {}}
-                    transition={{ duration: 0.6, delay: 0.2 + i * 0.07, ease: [0.22, 1, 0.36, 1] }}
+                    transition={{ duration: 0.6, delay: 0.2 + i * 0.07, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
                     className="flex items-start gap-3"
                   >
                     <CheckCircle2 className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
@@ -184,7 +184,7 @@ export const PlatformShowcase = () => {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.7, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.7, delay: 0.8, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
                 className="mt-10"
               >
                 <motion.button

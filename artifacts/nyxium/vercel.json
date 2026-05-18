@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "installCommand": "pnpm install --ignore-scripts",
   "buildCommand": "vite build --config vite.config.ts",
   "outputDirectory": "dist",
   "framework": null,

@@ -21,7 +21,7 @@ const containerVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.88, y: 20 },
-  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] } },
 };
 
 export const TechStack = () => {
@@ -45,7 +45,7 @@ export const TechStack = () => {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
             className="text-center mb-20"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/10 border border-blue-500/20 mb-6">
@@ -73,7 +73,7 @@ export const TechStack = () => {
               <motion.div
                 key={i}
                 variants={cardVariants}
-                whileHover={{ y: -6, transition: { duration: 0.3, ease: [0.22, 1, 0.36, 1] } }}
+                whileHover={{ y: -6, transition: { duration: 0.3, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] } }}
                 className="group glass-panel rounded-2xl p-6 cursor-default transition-shadow duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.5)] relative overflow-hidden"
                 style={{ willChange: "transform" }}
                 data-testid={`card-tech-${i}`}
@@ -111,7 +111,7 @@ export const TechStack = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
             className="text-center"
           >
             <p className="text-[10px] font-mono text-white/20 tracking-[0.25em] uppercase mb-8">Technology Partners</p>

@@ -48,7 +48,7 @@ export const Contact = () => {
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
           className="max-w-3xl mx-auto text-center"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/10 border border-blue-500/20 mb-8">
@@ -72,7 +72,7 @@ export const Contact = () => {
               onSubmit={handleSubmit}
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
               className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto mb-12"
             >
               <input
@@ -103,7 +103,7 @@ export const Contact = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
               className="max-w-lg mx-auto mb-12 p-6 rounded-xl border border-blue-500/25 bg-blue-600/[0.06] text-center"
             >
               <p className="text-blue-300 font-medium">Thank you. Our enterprise team will be in touch within 24 hours.</p>

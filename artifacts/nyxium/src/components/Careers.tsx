@@ -48,7 +48,7 @@ export const Careers = () => {
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] mb-6">
                 <span className="text-xs font-mono text-white/50 tracking-widest uppercase">Careers</span>
@@ -93,7 +93,7 @@ export const Careers = () => {
             <motion.div
               initial={{ opacity: 0, x: 40 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
             >
               <p className="text-[10px] font-mono text-white/25 uppercase tracking-[0.25em] mb-6">Open Positions</p>
 

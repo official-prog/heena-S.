@@ -60,7 +60,7 @@ export const AiInAction = () => {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
             className="text-center mb-20"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-400/10 border border-cyan-400/20 mb-6">
@@ -83,7 +83,7 @@ export const AiInAction = () => {
               <motion.div
                 initial={{ scaleX: 0, originX: 0 }}
                 animate={inView ? { scaleX: 1 } : {}}
-                transition={{ duration: 2, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 2, delay: 0.3, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
                 className="w-full h-full bg-gradient-to-r from-blue-500/50 via-cyan-400/50 to-blue-500/50"
               />
               {/* Animated pulse along line */}
@@ -99,7 +99,7 @@ export const AiInAction = () => {
                 key={stage.id}
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.7, delay: 0.3 + i * 0.15, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.7, delay: 0.3 + i * 0.15, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
                 className="flex flex-col items-center relative z-10 w-44"
                 data-testid={`stage-pipeline-${i}`}
               >
@@ -127,7 +127,7 @@ export const AiInAction = () => {
                 key={stage.id}
                 initial={{ opacity: 0, x: -30 }}
                 animate={inView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.7, delay: 0.15 + i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.7, delay: 0.15 + i * 0.1, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
                 className="flex items-center gap-4 glass-panel rounded-xl p-4"
               >
                 <div className="w-12 h-12 shrink-0 rounded-full flex items-center justify-center border"
@@ -148,7 +148,7 @@ export const AiInAction = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
             className="grid grid-cols-2 md:grid-cols-4 gap-6"
           >
             {metrics.map((metric, i) => (
