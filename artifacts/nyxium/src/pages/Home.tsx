@@ -19,7 +19,7 @@ export default function Home() {
       {/* Global scroll progress indicator */}
       <ScrollProgressBar />
 
-      {/* Global ambient background — fixed, scroll-reactive parallax orbs */}
+      {/* Global ambient background fixed, scroll-reactive parallax orbs */}
       <AmbientBackground />
 
       {/* All content sits above the ambient layer */}

@@ -23,7 +23,7 @@ function DashboardMockup({ inView }: { inView: boolean }) {
         </div>
         <div className="flex-1 mx-4">
           <div className="h-5 rounded-md bg-white/[0.04] flex items-center px-3">
-            <span className="text-[10px] text-white/25 font-mono">nyxium.ai/dashboard — Production</span>
+            <span className="text-[10px] text-white/25 font-mono">nyxium.ai/dashboard Production</span>
           </div>
         </div>
         <div className="w-2 h-2 rounded-full bg-green-400/80 animate-pulse" />
@@ -48,7 +48,7 @@ function DashboardMockup({ inView }: { inView: boolean }) {
         {/* Chart */}
         <div className="bg-white/[0.025] rounded-xl p-4 border border-white/[0.05]">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-[10px] font-mono text-white/30 uppercase tracking-wider">Neural Throughput — 24h</span>
+            <span className="text-[10px] font-mono text-white/30 uppercase tracking-wider">Neural Throughput 24h</span>
             <div className="flex items-center gap-1.5">
               <div className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
               <span className="text-[10px] font-mono text-cyan-400">Live</span>
@@ -123,7 +123,7 @@ export const PlatformShowcase = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
 
-          {/* Dashboard — foreground, moves faster */}
+          {/* Dashboard foreground, moves faster */}
           <motion.div
             style={{ y: yDashboard }}
             className="flex justify-center lg:justify-end order-2 lg:order-1"
@@ -143,7 +143,7 @@ export const PlatformShowcase = () => {
             </motion.div>
           </motion.div>
 
-          {/* Text — background, moves slower */}
+          {/* Text background, moves slower */}
           <motion.div
             style={{ y: yText }}
             className="order-1 lg:order-2"
@@ -163,7 +163,7 @@ export const PlatformShowcase = () => {
                 </span>
               </h2>
               <p className="text-lg text-white/35 mb-10 leading-relaxed">
-                Nyxium OS is the operating layer for enterprise AI — a unified control plane that orchestrates every model, workflow, and data stream across your organisation.
+                Nyxium OS is the operating layer for enterprise AI, a unified control plane that orchestrates every model, workflow, and data stream across your organisation.
               </p>
 
               <ul className="space-y-4">

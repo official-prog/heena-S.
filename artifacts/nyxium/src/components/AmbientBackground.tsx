@@ -23,7 +23,7 @@ export const AmbientBackground = () => {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(37,99,235,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(37,99,235,0.025)_1px,transparent_1px)] bg-[size:80px_80px]" />
       </motion.div>
 
-      {/* Orb 1 — top left, moves fast */}
+      {/* Orb 1 top left, moves fast */}
       <motion.div
         style={{ y: orb1Y }}
         className="absolute -top-40 -left-40 w-[700px] h-[700px] rounded-full"
@@ -33,7 +33,7 @@ export const AmbientBackground = () => {
         <div className="w-full h-full rounded-full bg-blue-600 blur-[160px]" />
       </motion.div>
 
-      {/* Orb 2 — right side, medium speed */}
+      {/* Orb 2 right side, medium speed */}
       <motion.div
         style={{ y: orb2Y }}
         className="absolute top-[30vh] -right-60 w-[500px] h-[500px] rounded-full"
@@ -43,7 +43,7 @@ export const AmbientBackground = () => {
         <div className="w-full h-full rounded-full bg-cyan-500 blur-[140px]" />
       </motion.div>
 
-      {/* Orb 3 — center-bottom, fast */}
+      {/* Orb 3 center-bottom, fast */}
       <motion.div
         style={{ y: orb3Y }}
         className="absolute top-[70vh] left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full"
@@ -53,7 +53,7 @@ export const AmbientBackground = () => {
         <div className="w-full h-full rounded-full bg-blue-700 blur-[150px]" />
       </motion.div>
 
-      {/* Orb 4 — lower left, slow */}
+      {/* Orb 4 lower left, slow */}
       <motion.div
         style={{ y: orb4Y }}
         className="absolute top-[120vh] -left-32 w-[450px] h-[450px] rounded-full"
@@ -63,7 +63,7 @@ export const AmbientBackground = () => {
         <div className="w-full h-full rounded-full bg-indigo-600 blur-[130px]" />
       </motion.div>
 
-      {/* Orb 5 — deep down */}
+      {/* Orb 5 deep down */}
       <motion.div
         style={{ y: orb2Y }}
         className="absolute top-[200vh] right-1/4 w-[400px] h-[400px] rounded-full"

@@ -23,7 +23,7 @@ const solutions = [
     icon: Layers,
     label: "03",
     title: "SaaS Transformation",
-    description: "Embed AI-native capabilities into your existing SaaS platforms. Predictive features, intelligent UX, and automated decision-making — shipped in weeks.",
+    description: "Embed AI-native capabilities into your existing SaaS platforms. Predictive features, intelligent UX, and automated decision-making shipped in weeks.",
     metrics: "12x faster deployment",
     color: "blue",
   },
@@ -145,7 +145,7 @@ export const Solutions = () => {
           </motion.div>
         </motion.div>
 
-        {/* Cards parallax layer — moves slightly slower */}
+        {/* Cards parallax layer moves slightly slower */}
         <motion.div style={{ y: yCards }}>
           <motion.div
             variants={containerVariants}

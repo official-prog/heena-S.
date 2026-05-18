@@ -24,7 +24,7 @@ export const Contact = () => {
     <section ref={sectionRef} className="py-36 bg-background relative overflow-hidden">
       <div className="section-line" />
 
-      {/* Ambient glow — moves fastest (deepest layer) */}
+      {/* Ambient glow moves fastest (deepest layer) */}
       <motion.div
         style={{ y: yGlow }}
         className="absolute inset-0 flex items-center justify-center pointer-events-none"

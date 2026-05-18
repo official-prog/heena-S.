@@ -70,7 +70,7 @@ export const CaseStudies = () => {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">at enterprise scale.</span>
             </h2>
             <p className="text-lg text-white/35 max-w-xl mx-auto">
-              Real outcomes from real enterprises. Not projections — verified results.
+              Real outcomes from real enterprises. Not projections, verified results.
             </p>
           </motion.div>
         </motion.div>

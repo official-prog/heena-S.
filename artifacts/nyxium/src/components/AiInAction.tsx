@@ -55,7 +55,7 @@ export const AiInAction = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full bg-blue-600/5 blur-[80px] pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-12">
-        {/* Heading — fastest parallax */}
+        {/* Heading fastest parallax */}
         <motion.div style={{ y: yHeading }}>
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -75,7 +75,7 @@ export const AiInAction = () => {
           </motion.div>
         </motion.div>
 
-        {/* Pipeline — mid parallax */}
+        {/* Pipeline mid parallax */}
         <motion.div style={{ y: yPipeline }} className="relative mb-24">
           {/* Desktop pipeline */}
           <div className="hidden md:flex items-center justify-between relative">
@@ -143,7 +143,7 @@ export const AiInAction = () => {
           </div>
         </motion.div>
 
-        {/* Metrics — slowest parallax */}
+        {/* Metrics slowest parallax */}
         <motion.div style={{ y: yMetrics }}>
           <motion.div
             initial={{ opacity: 0, y: 30 }}

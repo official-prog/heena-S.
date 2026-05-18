@@ -31,7 +31,7 @@ export const TrustedBy = () => {
         </p>
       </div>
 
-      {/* Ticker row 1 — left */}
+      {/* Ticker row 1 left */}
       <div className="relative w-full flex overflow-x-hidden mb-4">
         <motion.div
           className="flex whitespace-nowrap gap-16 py-2"
@@ -49,7 +49,7 @@ export const TrustedBy = () => {
         </motion.div>
       </div>
 
-      {/* Ticker row 2 — right (opposite direction) */}
+      {/* Ticker row 2 right (opposite direction) */}
       <div className="relative w-full flex overflow-x-hidden">
         <motion.div
           className="flex whitespace-nowrap gap-16 py-2"

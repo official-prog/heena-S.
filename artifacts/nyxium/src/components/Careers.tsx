@@ -4,7 +4,7 @@ import { ArrowUpRight, MapPin } from "lucide-react";
 
 const values = [
   { title: "Build at the frontier", description: "You'll work on problems that don't have textbook solutions. We operate at the edge of what's technically possible." },
-  { title: "Ownership by default", description: "Every engineer owns their domain end-to-end. No waiting for approvals, no committees — just conviction and execution." },
+  { title: "Ownership by default", description: "Every engineer owns their domain end-to-end. No waiting for approvals, no committees, just conviction and execution." },
   { title: "Rigour meets creativity", description: "We believe the best AI systems are simultaneously scientifically rigorous and imaginatively designed." },
   { title: "Impact at scale", description: "The work you do at Nyxium shapes how entire industries operate. Your models run in production. Your decisions matter." },
 ];
@@ -13,8 +13,8 @@ const openRoles = [
   { title: "AI Research Engineer", team: "Research", level: "Senior" },
   { title: "Enterprise Solutions Architect", team: "Solutions", level: "Lead" },
   { title: "ML Infrastructure Engineer", team: "Platform", level: "Senior" },
-  { title: "Product Designer — AI Systems", team: "Design", level: "Mid-Senior" },
-  { title: "Applied Scientist — NLP", team: "Research", level: "Senior" },
+  { title: "Product Designer: AI Systems", team: "Design", level: "Mid-Senior" },
+  { title: "Applied Scientist: NLP", team: "Research", level: "Senior" },
   { title: "Enterprise Account Executive", team: "Sales", level: "Senior" },
 ];
 
@@ -24,7 +24,7 @@ const containerVariants = {
 };
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] } },
 };
 
 export const Careers = () => {
@@ -43,7 +43,7 @@ export const Careers = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-16 xl:gap-24">
 
-          {/* Left column — fastest */}
+          {/* Left column fastest */}
           <motion.div style={{ y: yLeft }}>
             <motion.div
               initial={{ opacity: 0, x: -40 }}
@@ -62,7 +62,7 @@ export const Careers = () => {
               </p>
               <div className="flex items-center gap-2 mb-10 text-sm text-white/25">
                 <MapPin className="w-4 h-4" />
-                <span>Headquarters: London, EC2A — Shoreditch</span>
+                <span>Headquarters: London, EC2A, Shoreditch</span>
               </div>
 
               <motion.div
@@ -88,7 +88,7 @@ export const Careers = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right column — slower */}
+          {/* Right column slower */}
           <motion.div style={{ y: yRight }}>
             <motion.div
               initial={{ opacity: 0, x: 40 }}

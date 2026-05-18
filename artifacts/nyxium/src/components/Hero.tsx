@@ -27,13 +27,13 @@ export const Hero = () => {
   /* ── Parallax layers (foreground moves faster than background) ── */
   const progress = useSpring(scrollYProgress, { stiffness: 60, damping: 20 });
 
-  // Layer 0 — deepest bg (particle net)
+  // Layer 0 deepest bg (particle net)
   const yBg      = useTransform(progress, [0, 1], ["0%",   "20%"]);
-  // Layer 1 — mid ambient orbs
+  // Layer 1 mid ambient orbs
   const yMid     = useTransform(progress, [0, 1], ["0%",   "35%"]);
-  // Layer 2 — text column
+  // Layer 2 text column
   const yText    = useTransform(progress, [0, 1], ["0%",   "55%"]);
-  // Layer 3 — foreground cards (fastest)
+  // Layer 3 foreground cards (fastest)
   const yCards   = useTransform(progress, [0, 1], ["0%",   "75%"]);
 
   const opacity  = useTransform(progress, [0, 0.85], [1, 0]);
@@ -46,7 +46,7 @@ export const Hero = () => {
       ref={ref}
       className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden bg-background pt-20"
     >
-      {/* ── Background: particle net — slowest layer ── */}
+      {/* ── Background: particle net slowest layer ── */}
       <motion.div
         style={{ y: yBg, willChange: "transform" }}
         className="absolute inset-0 z-0"
@@ -100,7 +100,7 @@ export const Hero = () => {
       {/* ── Main content container ── */}
       <div className="container relative z-20 px-6 md:px-12 grid lg:grid-cols-2 gap-12 items-center">
 
-        {/* ── Text column — mid-speed parallax + motion blur ── */}
+        {/* ── Text column mid-speed parallax + motion blur ── */}
         <motion.div
           style={{ y: yText, opacity, scale, filter: blurFilter, willChange: "transform, filter" }}
         >
@@ -179,12 +179,12 @@ export const Hero = () => {
           </motion.div>
         </motion.div>
 
-        {/* ── Card column — fastest parallax + motion blur ── */}
+        {/* ── Card column fastest parallax + motion blur ── */}
         <motion.div
           style={{ y: yCards, opacity, filter: blurFilter, willChange: "transform, filter" }}
           className="hidden lg:block relative h-[600px] w-full"
         >
-          {/* Card 1 — Neural Inference */}
+          {/* Card 1 Neural Inference */}
           <motion.div
             animate={{ y: [0, -18, 0], rotateZ: [-0.5, 0.5, -0.5] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
@@ -220,7 +220,7 @@ export const Hero = () => {
             <div className="absolute inset-0 rounded-2xl pointer-events-none shadow-[inset_0_1px_0_rgba(255,255,255,0.08),inset_0_0_40px_rgba(37,99,235,0.05)]" />
           </motion.div>
 
-          {/* Card 2 — Ops Processed */}
+          {/* Card 2 Ops Processed */}
           <motion.div
             animate={{ y: [0, 22, 0], rotateZ: [0.3, -0.3, 0.3] }}
             transition={{ duration: 7.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
@@ -255,7 +255,7 @@ export const Hero = () => {
             </div>
           </motion.div>
 
-          {/* Card 3 — Live Accuracy badge */}
+          {/* Card 3 Live Accuracy badge */}
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 2 }}

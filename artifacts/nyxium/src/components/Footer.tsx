@@ -25,7 +25,7 @@ export const Footer = () => {
             </p>
             <div className="flex items-center gap-2 text-xs text-white/25 font-mono">
               <div className="w-1.5 h-1.5 rounded-full bg-green-400/60 animate-pulse" />
-              <span>Systems operational — 99.99% uptime</span>
+              <span>Systems operational, 99.99% uptime</span>
             </div>
             <p className="text-xs text-white/20 font-mono mt-3">
               1 Shoreditch High Street<br />London, E1 6PE, United Kingdom
